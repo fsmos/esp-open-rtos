@@ -45,7 +45,6 @@
 #include <lwip/stats.h>
 #include <lwip/snmp.h>
 #include "netif/etharp.h"
-#include "fsm_esp8266.h"
 
 /* declared in libnet80211.a */
 int8_t sdk_ieee80211_output_pbuf(struct netif *ifp, struct pbuf* pb);
@@ -72,8 +71,7 @@ err_t ethernetif_init(struct netif *netif)
 #if LWIP_NETIF_HOSTNAME
   /* Initialize interface hostname */
   netif->hostname = "lwip";
-#endif /* LWIP_NETIF_HOSTNAME */
-
+#endif /* LWIP_NETIF
   /*
    * Initialize the snmp variables and counters inside the struct netif.
    * The last argument should be replaced with your link speed, in units
@@ -92,7 +90,7 @@ err_t ethernetif_init(struct netif *netif)
   /* hwaddr seems to be set elsewhere, or (more likely) is set on tx by MAC layer */
   netif->mtu = 1500;
   netif->flags = NETIF_FLAG_ETHARP | NETIF_FLAG_LINK_UP;
-  FSM_Init(netif);
+
   return ERR_OK;
 }
 
@@ -104,12 +102,6 @@ void ethernetif_input(struct netif *netif, struct pbuf *p)
 
 
     switch(htons(ethhdr->type)) {
-    
-    case ETHTYPE_FSM:
-    FSM_ParsePacket(p,netif);
-    pbuf_free(p);
-    p = NULL;
-    break;
 	/* IP or ARP packet? */
     case ETHTYPE_IP:
     case ETHTYPE_ARP:
