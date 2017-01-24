@@ -54,10 +54,12 @@ static err_t
 low_level_output(struct netif *netif, struct pbuf *p)
 {
   struct pbuf *q;
-
+  err_t err;
   for(q = p; q != NULL; q = q->next) {
-      sdk_ieee80211_output_pbuf(netif, q);
+      err = sdk_ieee80211_output_pbuf(netif, q);
+      printf("PBufSend %i\n",err);
   }
+  
 
   LINK_STATS_INC(link.xmit);
 

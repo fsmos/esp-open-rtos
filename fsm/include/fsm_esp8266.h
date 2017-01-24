@@ -2,17 +2,21 @@
 #define FSM_ESP_8266
 #include "lwip/pbuf.h"
 #include "lwip/netif.h"
+#include "netif/etharp.h"
+
+#define ETHTYPE_FSM  0x1996U 
 
 void FSM_ParsePacket(struct pbuf *p,struct netif *netif);
-void FSM_SendEthernetPacket(char* Data,unsigned short len);
+void FSM_SendEthernetPacket(struct netif *netif,char* Data,unsigned short len);
 void FSM_Init(struct netif *netif);
+void FSM_Main_init(unsigned short id);
 
 struct FSM_ClientBuf
 {
-   struct netif *netif;
+   //struct netif *netif;
    unsigned short id;
-   unsigned char DstMac[6];
-   
+   struct eth_addr dst;
+   char reg;
 };
 
 struct FSM_Ethernet_Pack

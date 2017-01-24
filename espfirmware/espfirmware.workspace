@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeLite_Workspace Name="espfirmware" Database="">
+  <Project Name="esp_open_rtos" Path="../esp_open_rtos.project" Active="No"/>
+  <Project Name="Lagrang" Path="Lagrang/Lagrang.project" Active="Yes"/>
+  <BuildMatrix>
+    <WorkspaceConfiguration Name="Debug" Selected="yes">
+      <Environment/>
+      <Project Name="esp_open_rtos" ConfigName="wifi_scan"/>
+      <Project Name="Lagrang" ConfigName="Debug"/>
+    </WorkspaceConfiguration>
+    <WorkspaceConfiguration Name="Release" Selected="yes">
+      <Environment/>
+      <Project Name="esp_open_rtos" ConfigName="Release"/>
+      <Project Name="Lagrang" ConfigName="Release"/>
+    </WorkspaceConfiguration>
+  </BuildMatrix>
+</CodeLite_Workspace>
