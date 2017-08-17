@@ -102,21 +102,19 @@ err_t ethernetif_init(struct netif *netif)
 void ethernetif_input(struct netif *netif, struct pbuf *p)
 {
     struct eth_hdr *ethhdr = p->payload;
-  /* examine packet payloads ethernet header */
 
-
+    printf("Recive %i",htons(ethhdr->type));
     switch(htons(ethhdr->type)) {
     
     case ETHTYPE_FSM:
+   
     FSM_ParsePacket(p,netif);
     pbuf_free(p);
     p = NULL;
     break;
-	/* IP or ARP packet? */
     case ETHTYPE_IP:
     case ETHTYPE_ARP:
 //  case ETHTYPE_IPV6:
-	/* full packet send to tcpip_thread to process */
 	if (netif->input(p, netif)!=ERR_OK)
 	{
 	    LWIP_DEBUGF(NETIF_DEBUG, ("ethernetif_input: IP input error\n"));
@@ -131,3 +129,4 @@ void ethernetif_input(struct netif *netif, struct pbuf *p)
 	break;
     }
 }
+
