@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeLite_Workspace Name="espfirmware" Database="" Version="10.0.0">
+  <Project Name="esp_open_rtos" Path="../esp_open_rtos.project" Active="Yes"/>
+  <Project Name="FSMKernelModule" Path="../../../github/FSMServer/FSMKernelModules/FSMKernelModule.project" Active="No"/>
+  <BuildMatrix>
+    <WorkspaceConfiguration Name="Debug" Selected="yes">
+      <Environment/>
+      <Project Name="esp_open_rtos" ConfigName="wifi_scan"/>
+      <Project Name="FSMKernelModule" ConfigName="Debug"/>
+      <Project Name="FSMKernelModule" ConfigName="Debug"/>
+    </WorkspaceConfiguration>
+    <WorkspaceConfiguration Name="Release" Selected="no">
+      <Environment/>
+      <Project Name="esp_open_rtos" ConfigName="Release"/>
+      <Project Name="FSMKernelModule" ConfigName="Release"/>
+      <Project Name="FSMKernelModule" ConfigName="Release"/>
+    </WorkspaceConfiguration>
+  </BuildMatrix>
+</CodeLite_Workspace>

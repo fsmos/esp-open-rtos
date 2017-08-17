@@ -45,6 +45,7 @@
 #include <lwip/stats.h>
 #include <lwip/snmp.h>
 #include "netif/etharp.h"
+#include "fsm_esp8266.h"
 
 /* declared in libnet80211.a */
 int8_t sdk_ieee80211_output_pbuf(struct netif *ifp, struct pbuf* pb);
@@ -53,10 +54,12 @@ static err_t
 low_level_output(struct netif *netif, struct pbuf *p)
 {
   struct pbuf *q;
-
+  err_t err;
   for(q = p; q != NULL; q = q->next) {
-      sdk_ieee80211_output_pbuf(netif, q);
+      err = sdk_ieee80211_output_pbuf(netif, q);
+      printf("PBufSend %i\n",err);
   }
+  
 
   LINK_STATS_INC(link.xmit);
 
@@ -91,7 +94,7 @@ err_t ethernetif_init(struct netif *netif)
   /* hwaddr seems to be set elsewhere, or (more likely) is set on tx by MAC layer */
   netif->mtu = 1500;
   netif->flags = NETIF_FLAG_ETHARP | NETIF_FLAG_LINK_UP;
-
+  FSM_Init(netif);
   return ERR_OK;
 }
 
@@ -99,15 +102,19 @@ err_t ethernetif_init(struct netif *netif)
 void ethernetif_input(struct netif *netif, struct pbuf *p)
 {
     struct eth_hdr *ethhdr = p->payload;
-  /* examine packet payloads ethernet header */
 
-
+    printf("Recive %i",htons(ethhdr->type));
     switch(htons(ethhdr->type)) {
-	/* IP or ARP packet? */
+    
+    case ETHTYPE_FSM:
+   
+    FSM_ParsePacket(p,netif);
+    pbuf_free(p);
+    p = NULL;
+    break;
     case ETHTYPE_IP:
     case ETHTYPE_ARP:
 //  case ETHTYPE_IPV6:
-	/* full packet send to tcpip_thread to process */
 	if (netif->input(p, netif)!=ERR_OK)
 	{
 	    LWIP_DEBUGF(NETIF_DEBUG, ("ethernetif_input: IP input error\n"));
@@ -122,3 +129,4 @@ void ethernetif_input(struct netif *netif, struct pbuf *p)
 	break;
     }
 }
+

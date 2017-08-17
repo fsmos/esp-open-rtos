@@ -14,7 +14,7 @@
 #include <task.h>
 #include <queue.h>
 #include <dhcpserver.h>
-
+#include "fsm_esp8266.h"
 #include <lwip/api.h>
 
 #define AP_SSID "esp-open-rtos AP"
@@ -28,7 +28,8 @@ void user_init(void)
 {
     uart_set_baud(0, 115200);
     printf("SDK version:%s\n", sdk_system_get_sdk_version());
-
+    FSM_Main_init(1009);
+    
     sdk_wifi_set_opmode(SOFTAP_MODE);
     struct ip_info ap_ip;
     IP4_ADDR(&ap_ip.ip, 172, 16, 0, 1);

@@ -1,0 +1,1436 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeLite_Project Name="esp_open_rtos" InternalType="">
+  <Plugins>
+    <Plugin Name="qmake">
+      <![CDATA[00010001N0009wifi_scan000000000000]]>
+    </Plugin>
+  </Plugins>
+  <VirtualDirectory Name="tests">
+    <VirtualDirectory Name="unity">
+      <VirtualDirectory Name="examples">
+        <VirtualDirectory Name="example_1">
+          <VirtualDirectory Name="test">
+            <VirtualDirectory Name="test_runners">
+              <File Name="tests/unity/examples/example_1/test/test_runners/TestProductionCode_Runner.c"/>
+              <File Name="tests/unity/examples/example_1/test/test_runners/TestProductionCode2_Runner.c"/>
+            </VirtualDirectory>
+            <File Name="tests/unity/examples/example_1/test/TestProductionCode.c"/>
+            <File Name="tests/unity/examples/example_1/test/TestProductionCode2.c"/>
+          </VirtualDirectory>
+          <VirtualDirectory Name="src">
+            <File Name="tests/unity/examples/example_1/src/ProductionCode.c"/>
+            <File Name="tests/unity/examples/example_1/src/ProductionCode.h"/>
+            <File Name="tests/unity/examples/example_1/src/ProductionCode2.h"/>
+            <File Name="tests/unity/examples/example_1/src/ProductionCode2.c"/>
+          </VirtualDirectory>
+        </VirtualDirectory>
+        <VirtualDirectory Name="example_3">
+          <VirtualDirectory Name="test">
+            <File Name="tests/unity/examples/example_3/test/TestProductionCode.c"/>
+            <File Name="tests/unity/examples/example_3/test/TestProductionCode2.c"/>
+          </VirtualDirectory>
+          <VirtualDirectory Name="helper">
+            <File Name="tests/unity/examples/example_3/helper/UnityHelper.c"/>
+            <File Name="tests/unity/examples/example_3/helper/UnityHelper.h"/>
+          </VirtualDirectory>
+          <VirtualDirectory Name="src">
+            <File Name="tests/unity/examples/example_3/src/ProductionCode.c"/>
+            <File Name="tests/unity/examples/example_3/src/ProductionCode.h"/>
+            <File Name="tests/unity/examples/example_3/src/ProductionCode2.h"/>
+            <File Name="tests/unity/examples/example_3/src/ProductionCode2.c"/>
+          </VirtualDirectory>
+        </VirtualDirectory>
+        <VirtualDirectory Name="example_2">
+          <VirtualDirectory Name="test">
+            <VirtualDirectory Name="test_runners">
+              <File Name="tests/unity/examples/example_2/test/test_runners/TestProductionCode_Runner.c"/>
+              <File Name="tests/unity/examples/example_2/test/test_runners/all_tests.c"/>
+              <File Name="tests/unity/examples/example_2/test/test_runners/TestProductionCode2_Runner.c"/>
+            </VirtualDirectory>
+            <File Name="tests/unity/examples/example_2/test/TestProductionCode.c"/>
+            <File Name="tests/unity/examples/example_2/test/TestProductionCode2.c"/>
+          </VirtualDirectory>
+          <VirtualDirectory Name="src">
+            <File Name="tests/unity/examples/example_2/src/ProductionCode.c"/>
+            <File Name="tests/unity/examples/example_2/src/ProductionCode.h"/>
+            <File Name="tests/unity/examples/example_2/src/ProductionCode2.h"/>
+            <File Name="tests/unity/examples/example_2/src/ProductionCode2.c"/>
+          </VirtualDirectory>
+        </VirtualDirectory>
+        <File Name="tests/unity/examples/unity_config.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="test">
+        <VirtualDirectory Name="tests">
+          <File Name="tests/unity/test/tests/testparameterized.c"/>
+          <File Name="tests/unity/test/tests/testunity.c"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="expectdata">
+          <File Name="tests/unity/test/expectdata/testsample_mock_head1.h"/>
+          <File Name="tests/unity/test/expectdata/testsample_mock_run2.c"/>
+          <File Name="tests/unity/test/expectdata/testsample_mock_yaml.c"/>
+          <File Name="tests/unity/test/expectdata/testsample_new2.c"/>
+          <File Name="tests/unity/test/expectdata/testsample_mock_def.c"/>
+          <File Name="tests/unity/test/expectdata/testsample_run1.c"/>
+          <File Name="tests/unity/test/expectdata/testsample_new1.c"/>
+          <File Name="tests/unity/test/expectdata/testsample_cmd.c"/>
+          <File Name="tests/unity/test/expectdata/testsample_mock_new1.c"/>
+          <File Name="tests/unity/test/expectdata/testsample_yaml.c"/>
+          <File Name="tests/unity/test/expectdata/testsample_head1.c"/>
+          <File Name="tests/unity/test/expectdata/testsample_mock_run1.c"/>
+          <File Name="tests/unity/test/expectdata/testsample_def.c"/>
+          <File Name="tests/unity/test/expectdata/testsample_mock_cmd.c"/>
+          <File Name="tests/unity/test/expectdata/testsample_head1.h"/>
+          <File Name="tests/unity/test/expectdata/testsample_param.c"/>
+          <File Name="tests/unity/test/expectdata/testsample_mock_head1.c"/>
+          <File Name="tests/unity/test/expectdata/testsample_mock_new2.c"/>
+          <File Name="tests/unity/test/expectdata/testsample_mock_param.c"/>
+          <File Name="tests/unity/test/expectdata/testsample_run2.c"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="testdata">
+          <File Name="tests/unity/test/testdata/mockMock.h"/>
+          <File Name="tests/unity/test/testdata/testRunnerGenerator.c"/>
+          <File Name="tests/unity/test/testdata/CException.h"/>
+          <File Name="tests/unity/test/testdata/testRunnerGeneratorSmall.c"/>
+          <File Name="tests/unity/test/testdata/Defs.h"/>
+          <File Name="tests/unity/test/testdata/testRunnerGeneratorWithMocks.c"/>
+          <File Name="tests/unity/test/testdata/cmock.h"/>
+        </VirtualDirectory>
+      </VirtualDirectory>
+      <VirtualDirectory Name="extras">
+        <VirtualDirectory Name="fixture">
+          <VirtualDirectory Name="test">
+            <VirtualDirectory Name="main">
+              <File Name="tests/unity/extras/fixture/test/main/AllTests.c"/>
+            </VirtualDirectory>
+            <File Name="tests/unity/extras/fixture/test/unity_fixture_TestRunner.c"/>
+            <File Name="tests/unity/extras/fixture/test/template_fixture_tests.c"/>
+            <File Name="tests/unity/extras/fixture/test/unity_output_Spy.c"/>
+            <File Name="tests/unity/extras/fixture/test/unity_fixture_Test.c"/>
+            <File Name="tests/unity/extras/fixture/test/unity_output_Spy.h"/>
+          </VirtualDirectory>
+          <VirtualDirectory Name="src">
+            <File Name="tests/unity/extras/fixture/src/unity_fixture_internals.h"/>
+            <File Name="tests/unity/extras/fixture/src/unity_fixture_malloc_overrides.h"/>
+            <File Name="tests/unity/extras/fixture/src/unity_fixture.h"/>
+            <File Name="tests/unity/extras/fixture/src/unity_fixture.c"/>
+          </VirtualDirectory>
+        </VirtualDirectory>
+      </VirtualDirectory>
+      <VirtualDirectory Name="src">
+        <File Name="tests/unity/src/unity.h"/>
+        <File Name="tests/unity/src/unity.c"/>
+        <File Name="tests/unity/src/unity_internals.h"/>
+      </VirtualDirectory>
+    </VirtualDirectory>
+    <VirtualDirectory Name="include">
+      <File Name="tests/include/testcase.h"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="fs-test">
+      <File Name="tests/fs-test/main.c"/>
+      <File Name="tests/fs-test/fs_test.h"/>
+      <File Name="tests/fs-test/fs_test.c"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="cases">
+      <File Name="tests/cases/03_byte_load_flash.c"/>
+      <File Name="tests/cases/05_spiffs.c"/>
+      <File Name="tests/cases/01_scheduler.c"/>
+      <File Name="tests/cases/06_timers.c"/>
+      <File Name="tests/cases/04_wifi_basic.c"/>
+      <File Name="tests/cases/02_heap.c"/>
+    </VirtualDirectory>
+    <File Name="tests/test_main.c"/>
+  </VirtualDirectory>
+  <VirtualDirectory Name="open_esplibs">
+    <VirtualDirectory Name="include">
+      <VirtualDirectory Name="esplibs">
+        <File Name="open_esplibs/include/esplibs/libpp.h"/>
+        <File Name="open_esplibs/include/esplibs/libnet80211.h"/>
+        <File Name="open_esplibs/include/esplibs/libphy.h"/>
+        <File Name="open_esplibs/include/esplibs/libmain.h"/>
+        <File Name="open_esplibs/include/esplibs/libwpa.h"/>
+      </VirtualDirectory>
+      <File Name="open_esplibs/include/open_esplibs.h"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="libwpa">
+      <File Name="open_esplibs/libwpa/wpa_main.c"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="libmain">
+      <File Name="open_esplibs/libmain/timers.c"/>
+      <File Name="open_esplibs/libmain/os_cpu_a.c"/>
+      <File Name="open_esplibs/libmain/user_interface.c"/>
+      <File Name="open_esplibs/libmain/spi_flash.c"/>
+      <File Name="open_esplibs/libmain/uart.c"/>
+      <File Name="open_esplibs/libmain/misc.c"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="libphy">
+      <File Name="open_esplibs/libphy/phy.c"/>
+      <File Name="open_esplibs/libphy/phy_sleep.c"/>
+      <File Name="open_esplibs/libphy/phy_chip_v6.c"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="libnet80211">
+      <File Name="open_esplibs/libnet80211/wl_cnx.c"/>
+      <File Name="open_esplibs/libnet80211/ieee80211_hostap.c"/>
+      <File Name="open_esplibs/libnet80211/ieee80211_ets.c"/>
+      <File Name="open_esplibs/libnet80211/ieee80211_input.c"/>
+      <File Name="open_esplibs/libnet80211/ieee80211_sta.c"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="libpp">
+      <File Name="open_esplibs/libpp/lmac.c"/>
+      <File Name="open_esplibs/libpp/esf_buf.c"/>
+      <File Name="open_esplibs/libpp/if_hwctrl.c"/>
+      <File Name="open_esplibs/libpp/pm.c"/>
+      <File Name="open_esplibs/libpp/wdev.c"/>
+      <File Name="open_esplibs/libpp/pp.c"/>
+    </VirtualDirectory>
+    <File Name="open_esplibs/component.mk"/>
+  </VirtualDirectory>
+  <VirtualDirectory Name="lwip">
+    <VirtualDirectory Name="lwip">
+      <VirtualDirectory Name="src">
+        <VirtualDirectory Name="netif">
+          <VirtualDirectory Name="ppp">
+            <File Name="lwip/lwip/src/netif/ppp/auth.c"/>
+            <File Name="lwip/lwip/src/netif/ppp/pppdebug.h"/>
+            <File Name="lwip/lwip/src/netif/ppp/pap.c"/>
+            <File Name="lwip/lwip/src/netif/ppp/lcp.h"/>
+            <File Name="lwip/lwip/src/netif/ppp/fsm.c"/>
+            <File Name="lwip/lwip/src/netif/ppp/pap.h"/>
+            <File Name="lwip/lwip/src/netif/ppp/fsm.h"/>
+            <File Name="lwip/lwip/src/netif/ppp/lcp.c"/>
+            <File Name="lwip/lwip/src/netif/ppp/ppp_oe.c"/>
+            <File Name="lwip/lwip/src/netif/ppp/auth.h"/>
+            <File Name="lwip/lwip/src/netif/ppp/ipcp.h"/>
+            <File Name="lwip/lwip/src/netif/ppp/chpms.c"/>
+            <File Name="lwip/lwip/src/netif/ppp/ppp.h"/>
+            <File Name="lwip/lwip/src/netif/ppp/ppp.c"/>
+            <File Name="lwip/lwip/src/netif/ppp/vj.h"/>
+            <File Name="lwip/lwip/src/netif/ppp/md5.h"/>
+            <File Name="lwip/lwip/src/netif/ppp/ppp_impl.h"/>
+            <File Name="lwip/lwip/src/netif/ppp/vj.c"/>
+            <File Name="lwip/lwip/src/netif/ppp/md5.c"/>
+            <File Name="lwip/lwip/src/netif/ppp/randm.c"/>
+            <File Name="lwip/lwip/src/netif/ppp/chap.h"/>
+            <File Name="lwip/lwip/src/netif/ppp/magic.c"/>
+            <File Name="lwip/lwip/src/netif/ppp/chap.c"/>
+            <File Name="lwip/lwip/src/netif/ppp/magic.h"/>
+            <File Name="lwip/lwip/src/netif/ppp/randm.h"/>
+            <File Name="lwip/lwip/src/netif/ppp/chpms.h"/>
+            <File Name="lwip/lwip/src/netif/ppp/ipcp.c"/>
+          </VirtualDirectory>
+          <File Name="lwip/lwip/src/netif/etharp.c"/>
+          <File Name="lwip/lwip/src/netif/slipif.c"/>
+          <File Name="lwip/lwip/src/netif/ethernetif.c"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="core">
+          <VirtualDirectory Name="snmp">
+            <File Name="lwip/lwip/src/core/snmp/mib_structs.c"/>
+            <File Name="lwip/lwip/src/core/snmp/mib2.c"/>
+            <File Name="lwip/lwip/src/core/snmp/asn1_enc.c"/>
+            <File Name="lwip/lwip/src/core/snmp/msg_out.c"/>
+            <File Name="lwip/lwip/src/core/snmp/asn1_dec.c"/>
+            <File Name="lwip/lwip/src/core/snmp/msg_in.c"/>
+          </VirtualDirectory>
+          <VirtualDirectory Name="ipv6">
+            <File Name="lwip/lwip/src/core/ipv6/ip6_addr.c"/>
+            <File Name="lwip/lwip/src/core/ipv6/icmp6.c"/>
+            <File Name="lwip/lwip/src/core/ipv6/ip6.c"/>
+            <File Name="lwip/lwip/src/core/ipv6/inet6.c"/>
+          </VirtualDirectory>
+          <VirtualDirectory Name="ipv4">
+            <File Name="lwip/lwip/src/core/ipv4/inet.c"/>
+            <File Name="lwip/lwip/src/core/ipv4/igmp.c"/>
+            <File Name="lwip/lwip/src/core/ipv4/icmp.c"/>
+            <File Name="lwip/lwip/src/core/ipv4/ip_addr.c"/>
+            <File Name="lwip/lwip/src/core/ipv4/ip_frag.c"/>
+            <File Name="lwip/lwip/src/core/ipv4/inet_chksum.c"/>
+            <File Name="lwip/lwip/src/core/ipv4/autoip.c"/>
+            <File Name="lwip/lwip/src/core/ipv4/ip.c"/>
+          </VirtualDirectory>
+          <File Name="lwip/lwip/src/core/netif.c"/>
+          <File Name="lwip/lwip/src/core/pbuf.c"/>
+          <File Name="lwip/lwip/src/core/timers.c"/>
+          <File Name="lwip/lwip/src/core/raw.c"/>
+          <File Name="lwip/lwip/src/core/dhcp.c"/>
+          <File Name="lwip/lwip/src/core/dns.c"/>
+          <File Name="lwip/lwip/src/core/udp.c"/>
+          <File Name="lwip/lwip/src/core/mem.c"/>
+          <File Name="lwip/lwip/src/core/tcp.c"/>
+          <File Name="lwip/lwip/src/core/memp.c"/>
+          <File Name="lwip/lwip/src/core/sys.c"/>
+          <File Name="lwip/lwip/src/core/tcp_out.c"/>
+          <File Name="lwip/lwip/src/core/stats.c"/>
+          <File Name="lwip/lwip/src/core/def.c"/>
+          <File Name="lwip/lwip/src/core/init.c"/>
+          <File Name="lwip/lwip/src/core/tcp_in.c"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="include">
+          <VirtualDirectory Name="ipv4">
+            <VirtualDirectory Name="lwip">
+              <File Name="lwip/lwip/src/include/ipv4/lwip/ip_addr.h"/>
+              <File Name="lwip/lwip/src/include/ipv4/lwip/autoip.h"/>
+              <File Name="lwip/lwip/src/include/ipv4/lwip/ip.h"/>
+              <File Name="lwip/lwip/src/include/ipv4/lwip/icmp.h"/>
+              <File Name="lwip/lwip/src/include/ipv4/lwip/igmp.h"/>
+              <File Name="lwip/lwip/src/include/ipv4/lwip/inet_chksum.h"/>
+              <File Name="lwip/lwip/src/include/ipv4/lwip/inet.h"/>
+              <File Name="lwip/lwip/src/include/ipv4/lwip/ip_frag.h"/>
+            </VirtualDirectory>
+          </VirtualDirectory>
+          <VirtualDirectory Name="ipv6">
+            <VirtualDirectory Name="lwip">
+              <File Name="lwip/lwip/src/include/ipv6/lwip/ip_addr.h"/>
+              <File Name="lwip/lwip/src/include/ipv6/lwip/ip.h"/>
+              <File Name="lwip/lwip/src/include/ipv6/lwip/icmp.h"/>
+              <File Name="lwip/lwip/src/include/ipv6/lwip/inet.h"/>
+            </VirtualDirectory>
+          </VirtualDirectory>
+          <VirtualDirectory Name="posix">
+            <VirtualDirectory Name="sys">
+              <File Name="lwip/lwip/src/include/posix/sys/socket.h"/>
+            </VirtualDirectory>
+            <File Name="lwip/lwip/src/include/posix/netdb.h"/>
+          </VirtualDirectory>
+          <VirtualDirectory Name="netif">
+            <File Name="lwip/lwip/src/include/netif/slipif.h"/>
+            <File Name="lwip/lwip/src/include/netif/etharp.h"/>
+            <File Name="lwip/lwip/src/include/netif/ppp_oe.h"/>
+          </VirtualDirectory>
+          <VirtualDirectory Name="lwip">
+            <File Name="lwip/lwip/src/include/lwip/tcp.h"/>
+            <File Name="lwip/lwip/src/include/lwip/api_msg.h"/>
+            <File Name="lwip/lwip/src/include/lwip/udp.h"/>
+            <File Name="lwip/lwip/src/include/lwip/netbuf.h"/>
+            <File Name="lwip/lwip/src/include/lwip/pbuf.h"/>
+            <File Name="lwip/lwip/src/include/lwip/sys.h"/>
+            <File Name="lwip/lwip/src/include/lwip/tcp_impl.h"/>
+            <File Name="lwip/lwip/src/include/lwip/arch.h"/>
+            <File Name="lwip/lwip/src/include/lwip/debug.h"/>
+            <File Name="lwip/lwip/src/include/lwip/tcpip.h"/>
+            <File Name="lwip/lwip/src/include/lwip/memp_std.h"/>
+            <File Name="lwip/lwip/src/include/lwip/stats.h"/>
+            <File Name="lwip/lwip/src/include/lwip/err.h"/>
+            <File Name="lwip/lwip/src/include/lwip/snmp_asn1.h"/>
+            <File Name="lwip/lwip/src/include/lwip/sockets.h"/>
+            <File Name="lwip/lwip/src/include/lwip/netifapi.h"/>
+            <File Name="lwip/lwip/src/include/lwip/timers.h"/>
+            <File Name="lwip/lwip/src/include/lwip/raw.h"/>
+            <File Name="lwip/lwip/src/include/lwip/snmp_structs.h"/>
+            <File Name="lwip/lwip/src/include/lwip/api.h"/>
+            <File Name="lwip/lwip/src/include/lwip/memp.h"/>
+            <File Name="lwip/lwip/src/include/lwip/opt.h"/>
+            <File Name="lwip/lwip/src/include/lwip/mem.h"/>
+            <File Name="lwip/lwip/src/include/lwip/init.h"/>
+            <File Name="lwip/lwip/src/include/lwip/netdb.h"/>
+            <File Name="lwip/lwip/src/include/lwip/dns.h"/>
+            <File Name="lwip/lwip/src/include/lwip/netif.h"/>
+            <File Name="lwip/lwip/src/include/lwip/dhcp.h"/>
+            <File Name="lwip/lwip/src/include/lwip/snmp.h"/>
+            <File Name="lwip/lwip/src/include/lwip/def.h"/>
+            <File Name="lwip/lwip/src/include/lwip/snmp_msg.h"/>
+            <File Name="lwip/lwip/src/include/lwip/sio.h"/>
+          </VirtualDirectory>
+        </VirtualDirectory>
+        <VirtualDirectory Name="api">
+          <File Name="lwip/lwip/src/api/netifapi.c"/>
+          <File Name="lwip/lwip/src/api/netdb.c"/>
+          <File Name="lwip/lwip/src/api/sockets.c"/>
+          <File Name="lwip/lwip/src/api/api_msg.c"/>
+          <File Name="lwip/lwip/src/api/tcpip.c"/>
+          <File Name="lwip/lwip/src/api/api_lib.c"/>
+          <File Name="lwip/lwip/src/api/err.c"/>
+          <File Name="lwip/lwip/src/api/netbuf.c"/>
+        </VirtualDirectory>
+      </VirtualDirectory>
+      <VirtualDirectory Name="espressif">
+        <VirtualDirectory Name="include">
+          <VirtualDirectory Name="lwip">
+            <VirtualDirectory Name="app">
+              <File Name="lwip/lwip/espressif/include/lwip/app/dhcpserver.h"/>
+              <File Name="lwip/lwip/espressif/include/lwip/app/espconn_udp.h"/>
+              <File Name="lwip/lwip/espressif/include/lwip/app/ping.h"/>
+              <File Name="lwip/lwip/espressif/include/lwip/app/espconn.h"/>
+              <File Name="lwip/lwip/espressif/include/lwip/app/espconn_tcp.h"/>
+            </VirtualDirectory>
+          </VirtualDirectory>
+          <VirtualDirectory Name="arch">
+            <File Name="lwip/lwip/espressif/include/arch/cc.h"/>
+            <File Name="lwip/lwip/espressif/include/arch/perf.h"/>
+          </VirtualDirectory>
+          <File Name="lwip/lwip/espressif/include/mem_manager.h"/>
+          <File Name="lwip/lwip/espressif/include/user_config.h"/>
+          <File Name="lwip/lwip/espressif/include/c_types.h"/>
+        </VirtualDirectory>
+        <File Name="lwip/lwip/espressif/netio.c"/>
+        <File Name="lwip/lwip/espressif/sys_arch.c"/>
+        <File Name="lwip/lwip/espressif/dhcpserver.c"/>
+        <File Name="lwip/lwip/espressif/ping.c"/>
+        <File Name="lwip/lwip/espressif/espconn_udp.c"/>
+        <File Name="lwip/lwip/espressif/espconn_tcp.c"/>
+        <File Name="lwip/lwip/espressif/espconn.c"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="test">
+        <VirtualDirectory Name="unit">
+          <VirtualDirectory Name="etharp">
+            <File Name="lwip/lwip/test/unit/etharp/test_etharp.c"/>
+            <File Name="lwip/lwip/test/unit/etharp/test_etharp.h"/>
+          </VirtualDirectory>
+          <VirtualDirectory Name="core">
+            <File Name="lwip/lwip/test/unit/core/test_mem.c"/>
+            <File Name="lwip/lwip/test/unit/core/test_mem.h"/>
+          </VirtualDirectory>
+          <VirtualDirectory Name="udp">
+            <File Name="lwip/lwip/test/unit/udp/test_udp.h"/>
+            <File Name="lwip/lwip/test/unit/udp/test_udp.c"/>
+          </VirtualDirectory>
+          <VirtualDirectory Name="tcp">
+            <File Name="lwip/lwip/test/unit/tcp/test_tcp.h"/>
+            <File Name="lwip/lwip/test/unit/tcp/test_tcp_oos.h"/>
+            <File Name="lwip/lwip/test/unit/tcp/test_tcp.c"/>
+            <File Name="lwip/lwip/test/unit/tcp/tcp_helper.h"/>
+            <File Name="lwip/lwip/test/unit/tcp/tcp_helper.c"/>
+            <File Name="lwip/lwip/test/unit/tcp/test_tcp_oos.c"/>
+          </VirtualDirectory>
+          <File Name="lwip/lwip/test/unit/lwip_unittests.c"/>
+          <File Name="lwip/lwip/test/unit/lwip_check.h"/>
+          <File Name="lwip/lwip/test/unit/lwipopts.h"/>
+        </VirtualDirectory>
+      </VirtualDirectory>
+      <VirtualDirectory Name="our">
+        <File Name="lwip/lwip/our/eagle_lwip_if.c"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="config">
+        <File Name="lwip/lwip/config/lwipopts.h"/>
+      </VirtualDirectory>
+    </VirtualDirectory>
+    <VirtualDirectory Name="include">
+      <VirtualDirectory Name="arch">
+        <File Name="lwip/include/arch/cc.h"/>
+        <File Name="lwip/include/arch/perf.h"/>
+        <File Name="lwip/include/arch/sys_arch.h"/>
+      </VirtualDirectory>
+      <File Name="lwip/include/netbuf_helpers.h"/>
+      <File Name="lwip/include/lwipopts.h"/>
+    </VirtualDirectory>
+    <File Name="lwip/sys_arch.c"/>
+    <File Name="lwip/esp_interface.c"/>
+    <File Name="lwip/component.mk"/>
+  </VirtualDirectory>
+  <VirtualDirectory Name="libc">
+    <VirtualDirectory Name="xtensa-lx106-elf">
+      <VirtualDirectory Name="include">
+        <VirtualDirectory Name="xtensa">
+          <VirtualDirectory Name="config">
+            <File Name="libc/xtensa-lx106-elf/include/xtensa/config/core-isa.h"/>
+          </VirtualDirectory>
+        </VirtualDirectory>
+        <VirtualDirectory Name="machine">
+          <File Name="libc/xtensa-lx106-elf/include/machine/termios.h"/>
+          <File Name="libc/xtensa-lx106-elf/include/machine/ieeefp.h"/>
+          <File Name="libc/xtensa-lx106-elf/include/machine/_default_types.h"/>
+          <File Name="libc/xtensa-lx106-elf/include/machine/time.h"/>
+          <File Name="libc/xtensa-lx106-elf/include/machine/fastmath.h"/>
+          <File Name="libc/xtensa-lx106-elf/include/machine/setjmp-dj.h"/>
+          <File Name="libc/xtensa-lx106-elf/include/machine/ansi.h"/>
+          <File Name="libc/xtensa-lx106-elf/include/machine/stdlib.h"/>
+          <File Name="libc/xtensa-lx106-elf/include/machine/setjmp.h"/>
+          <File Name="libc/xtensa-lx106-elf/include/machine/_types.h"/>
+          <File Name="libc/xtensa-lx106-elf/include/machine/types.h"/>
+          <File Name="libc/xtensa-lx106-elf/include/machine/param.h"/>
+          <File Name="libc/xtensa-lx106-elf/include/machine/malloc.h"/>
+          <File Name="libc/xtensa-lx106-elf/include/machine/endian.h"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="sys">
+          <File Name="libc/xtensa-lx106-elf/include/sys/reent.h"/>
+          <File Name="libc/xtensa-lx106-elf/include/sys/times.h"/>
+          <File Name="libc/xtensa-lx106-elf/include/sys/_default_fcntl.h"/>
+          <File Name="libc/xtensa-lx106-elf/include/sys/stdio.h"/>
+          <File Name="libc/xtensa-lx106-elf/include/sys/features.h"/>
+          <File Name="libc/xtensa-lx106-elf/include/sys/cdefs.h"/>
+          <File Name="libc/xtensa-lx106-elf/include/sys/iconvnls.h"/>
+          <File Name="libc/xtensa-lx106-elf/include/sys/signal.h"/>
+          <File Name="libc/xtensa-lx106-elf/include/sys/time.h"/>
+          <File Name="libc/xtensa-lx106-elf/include/sys/sched.h"/>
+          <File Name="libc/xtensa-lx106-elf/include/sys/resource.h"/>
+          <File Name="libc/xtensa-lx106-elf/include/sys/stat.h"/>
+          <File Name="libc/xtensa-lx106-elf/include/sys/dir.h"/>
+          <File Name="libc/xtensa-lx106-elf/include/sys/syslimits.h"/>
+          <File Name="libc/xtensa-lx106-elf/include/sys/queue.h"/>
+          <File Name="libc/xtensa-lx106-elf/include/sys/timeb.h"/>
+          <File Name="libc/xtensa-lx106-elf/include/sys/errno.h"/>
+          <File Name="libc/xtensa-lx106-elf/include/sys/file.h"/>
+          <File Name="libc/xtensa-lx106-elf/include/sys/config.h"/>
+          <File Name="libc/xtensa-lx106-elf/include/sys/_types.h"/>
+          <File Name="libc/xtensa-lx106-elf/include/sys/string.h"/>
+          <File Name="libc/xtensa-lx106-elf/include/sys/wait.h"/>
+          <File Name="libc/xtensa-lx106-elf/include/sys/types.h"/>
+          <File Name="libc/xtensa-lx106-elf/include/sys/fcntl.h"/>
+          <File Name="libc/xtensa-lx106-elf/include/sys/utime.h"/>
+          <File Name="libc/xtensa-lx106-elf/include/sys/custom_file.h"/>
+          <File Name="libc/xtensa-lx106-elf/include/sys/param.h"/>
+          <File Name="libc/xtensa-lx106-elf/include/sys/lock.h"/>
+          <File Name="libc/xtensa-lx106-elf/include/sys/unistd.h"/>
+          <File Name="libc/xtensa-lx106-elf/include/sys/_intsup.h"/>
+          <File Name="libc/xtensa-lx106-elf/include/sys/dirent.h"/>
+        </VirtualDirectory>
+        <File Name="libc/xtensa-lx106-elf/include/stdio_ext.h"/>
+        <File Name="libc/xtensa-lx106-elf/include/reent.h"/>
+        <File Name="libc/xtensa-lx106-elf/include/argz.h"/>
+        <File Name="libc/xtensa-lx106-elf/include/_ansi.h"/>
+        <File Name="libc/xtensa-lx106-elf/include/pthread.h"/>
+        <File Name="libc/xtensa-lx106-elf/include/termios.h"/>
+        <File Name="libc/xtensa-lx106-elf/include/paths.h"/>
+        <File Name="libc/xtensa-lx106-elf/include/ieeefp.h"/>
+        <File Name="libc/xtensa-lx106-elf/include/wchar.h"/>
+        <File Name="libc/xtensa-lx106-elf/include/envz.h"/>
+        <File Name="libc/xtensa-lx106-elf/include/assert.h"/>
+        <File Name="libc/xtensa-lx106-elf/include/stdio.h"/>
+        <File Name="libc/xtensa-lx106-elf/include/wctype.h"/>
+        <File Name="libc/xtensa-lx106-elf/include/search.h"/>
+        <File Name="libc/xtensa-lx106-elf/include/tgmath.h"/>
+        <File Name="libc/xtensa-lx106-elf/include/fenv.h"/>
+        <File Name="libc/xtensa-lx106-elf/include/iconv.h"/>
+        <File Name="libc/xtensa-lx106-elf/include/_syslist.h"/>
+        <File Name="libc/xtensa-lx106-elf/include/signal.h"/>
+        <File Name="libc/xtensa-lx106-elf/include/time.h"/>
+        <File Name="libc/xtensa-lx106-elf/include/fastmath.h"/>
+        <File Name="libc/xtensa-lx106-elf/include/limits.h"/>
+        <File Name="libc/xtensa-lx106-elf/include/inttypes.h"/>
+        <File Name="libc/xtensa-lx106-elf/include/sched.h"/>
+        <File Name="libc/xtensa-lx106-elf/include/spawn.h"/>
+        <File Name="libc/xtensa-lx106-elf/include/locale.h"/>
+        <File Name="libc/xtensa-lx106-elf/include/errno.h"/>
+        <File Name="libc/xtensa-lx106-elf/include/stdlib.h"/>
+        <File Name="libc/xtensa-lx106-elf/include/envlock.h"/>
+        <File Name="libc/xtensa-lx106-elf/include/libgen.h"/>
+        <File Name="libc/xtensa-lx106-elf/include/regex.h"/>
+        <File Name="libc/xtensa-lx106-elf/include/config.h"/>
+        <File Name="libc/xtensa-lx106-elf/include/fnmatch.h"/>
+        <File Name="libc/xtensa-lx106-elf/include/setjmp.h"/>
+        <File Name="libc/xtensa-lx106-elf/include/math.h"/>
+        <File Name="libc/xtensa-lx106-elf/include/alloca.h"/>
+        <File Name="libc/xtensa-lx106-elf/include/utmp.h"/>
+        <File Name="libc/xtensa-lx106-elf/include/grp.h"/>
+        <File Name="libc/xtensa-lx106-elf/include/string.h"/>
+        <File Name="libc/xtensa-lx106-elf/include/stdint.h"/>
+        <File Name="libc/xtensa-lx106-elf/include/strings.h"/>
+        <File Name="libc/xtensa-lx106-elf/include/tar.h"/>
+        <File Name="libc/xtensa-lx106-elf/include/fcntl.h"/>
+        <File Name="libc/xtensa-lx106-elf/include/utime.h"/>
+        <File Name="libc/xtensa-lx106-elf/include/pwd.h"/>
+        <File Name="libc/xtensa-lx106-elf/include/ar.h"/>
+        <File Name="libc/xtensa-lx106-elf/include/getopt.h"/>
+        <File Name="libc/xtensa-lx106-elf/include/ctype.h"/>
+        <File Name="libc/xtensa-lx106-elf/include/unistd.h"/>
+        <File Name="libc/xtensa-lx106-elf/include/stdatomic.h"/>
+        <File Name="libc/xtensa-lx106-elf/include/wordexp.h"/>
+        <File Name="libc/xtensa-lx106-elf/include/malloc.h"/>
+        <File Name="libc/xtensa-lx106-elf/include/newlib.h"/>
+        <File Name="libc/xtensa-lx106-elf/include/unctrl.h"/>
+        <File Name="libc/xtensa-lx106-elf/include/langinfo.h"/>
+        <File Name="libc/xtensa-lx106-elf/include/glob.h"/>
+        <File Name="libc/xtensa-lx106-elf/include/dirent.h"/>
+        <File Name="libc/xtensa-lx106-elf/include/regdef.h"/>
+        <File Name="libc/xtensa-lx106-elf/include/complex.h"/>
+      </VirtualDirectory>
+    </VirtualDirectory>
+  </VirtualDirectory>
+  <VirtualDirectory Name="include">
+    <VirtualDirectory Name="espressif">
+      <VirtualDirectory Name="esp8266">
+        <File Name="include/espressif/esp8266/pin_mux_register.h"/>
+        <File Name="include/espressif/esp8266/ets_sys.h"/>
+        <File Name="include/espressif/esp8266/spi_register.h"/>
+        <File Name="include/espressif/esp8266/uart_register.h"/>
+        <File Name="include/espressif/esp8266/esp8266.h"/>
+        <File Name="include/espressif/esp8266/timer_register.h"/>
+        <File Name="include/espressif/esp8266/eagle_soc.h"/>
+        <File Name="include/espressif/esp8266/gpio_register.h"/>
+      </VirtualDirectory>
+      <File Name="include/espressif/esp_misc.h"/>
+      <File Name="include/espressif/esp_system.h"/>
+      <File Name="include/espressif/esp_softap.h"/>
+      <File Name="include/espressif/phy_info.h"/>
+      <File Name="include/espressif/user_interface.h"/>
+      <File Name="include/espressif/sdk_private.h"/>
+      <File Name="include/espressif/queue.h"/>
+      <File Name="include/espressif/osapi.h"/>
+      <File Name="include/espressif/spi_flash.h"/>
+      <File Name="include/espressif/esp_wifi.h"/>
+      <File Name="include/espressif/esp_timer.h"/>
+      <File Name="include/espressif/esp_common.h"/>
+      <File Name="include/espressif/esp_sta.h"/>
+    </VirtualDirectory>
+    <File Name="include/etstimer.h"/>
+    <File Name="include/ssid_config.h"/>
+  </VirtualDirectory>
+  <VirtualDirectory Name="extras">
+    <VirtualDirectory Name="mbedtls">
+      <VirtualDirectory Name="mbedtls">
+        <VirtualDirectory Name="yotta">
+          <VirtualDirectory Name="data">
+            <VirtualDirectory Name="example-benchmark">
+              <File Name="extras/mbedtls/mbedtls/yotta/data/example-benchmark/main.cpp"/>
+            </VirtualDirectory>
+            <VirtualDirectory Name="example-authcrypt">
+              <File Name="extras/mbedtls/mbedtls/yotta/data/example-authcrypt/main.cpp"/>
+            </VirtualDirectory>
+            <VirtualDirectory Name="example-tls-client">
+              <File Name="extras/mbedtls/mbedtls/yotta/data/example-tls-client/main.cpp"/>
+            </VirtualDirectory>
+            <VirtualDirectory Name="example-hashing">
+              <File Name="extras/mbedtls/mbedtls/yotta/data/example-hashing/main.cpp"/>
+            </VirtualDirectory>
+            <VirtualDirectory Name="example-selftest">
+              <File Name="extras/mbedtls/mbedtls/yotta/data/example-selftest/main.cpp"/>
+            </VirtualDirectory>
+            <File Name="extras/mbedtls/mbedtls/yotta/data/target_config.h"/>
+            <File Name="extras/mbedtls/mbedtls/yotta/data/entropy_hardware_poll.c"/>
+          </VirtualDirectory>
+        </VirtualDirectory>
+        <VirtualDirectory Name="doxygen">
+          <VirtualDirectory Name="input">
+            <File Name="extras/mbedtls/mbedtls/doxygen/input/doc_x509.h"/>
+            <File Name="extras/mbedtls/mbedtls/doxygen/input/doc_hashing.h"/>
+            <File Name="extras/mbedtls/mbedtls/doxygen/input/doc_encdec.h"/>
+            <File Name="extras/mbedtls/mbedtls/doxygen/input/doc_tcpip.h"/>
+            <File Name="extras/mbedtls/mbedtls/doxygen/input/doc_mainpage.h"/>
+            <File Name="extras/mbedtls/mbedtls/doxygen/input/doc_ssltls.h"/>
+            <File Name="extras/mbedtls/mbedtls/doxygen/input/doc_rng.h"/>
+          </VirtualDirectory>
+        </VirtualDirectory>
+        <VirtualDirectory Name="programs">
+          <VirtualDirectory Name="test">
+            <File Name="extras/mbedtls/mbedtls/programs/test/ssl_cert_test.c"/>
+            <File Name="extras/mbedtls/mbedtls/programs/test/benchmark.c"/>
+            <File Name="extras/mbedtls/mbedtls/programs/test/udp_proxy.c"/>
+            <File Name="extras/mbedtls/mbedtls/programs/test/selftest.c"/>
+          </VirtualDirectory>
+          <VirtualDirectory Name="ssl">
+            <File Name="extras/mbedtls/mbedtls/programs/ssl/ssl_client1.c"/>
+            <File Name="extras/mbedtls/mbedtls/programs/ssl/ssl_server2.c"/>
+            <File Name="extras/mbedtls/mbedtls/programs/ssl/ssl_mail_client.c"/>
+            <File Name="extras/mbedtls/mbedtls/programs/ssl/ssl_fork_server.c"/>
+            <File Name="extras/mbedtls/mbedtls/programs/ssl/mini_client.c"/>
+            <File Name="extras/mbedtls/mbedtls/programs/ssl/ssl_server.c"/>
+            <File Name="extras/mbedtls/mbedtls/programs/ssl/dtls_server.c"/>
+            <File Name="extras/mbedtls/mbedtls/programs/ssl/ssl_pthread_server.c"/>
+            <File Name="extras/mbedtls/mbedtls/programs/ssl/ssl_client2.c"/>
+            <File Name="extras/mbedtls/mbedtls/programs/ssl/dtls_client.c"/>
+          </VirtualDirectory>
+          <VirtualDirectory Name="random">
+            <File Name="extras/mbedtls/mbedtls/programs/random/gen_random_havege.c"/>
+            <File Name="extras/mbedtls/mbedtls/programs/random/gen_entropy.c"/>
+            <File Name="extras/mbedtls/mbedtls/programs/random/gen_random_ctr_drbg.c"/>
+          </VirtualDirectory>
+          <VirtualDirectory Name="pkey">
+            <File Name="extras/mbedtls/mbedtls/programs/pkey/gen_key.c"/>
+            <File Name="extras/mbedtls/mbedtls/programs/pkey/rsa_verify_pss.c"/>
+            <File Name="extras/mbedtls/mbedtls/programs/pkey/rsa_sign.c"/>
+            <File Name="extras/mbedtls/mbedtls/programs/pkey/rsa_genkey.c"/>
+            <File Name="extras/mbedtls/mbedtls/programs/pkey/mpi_demo.c"/>
+            <File Name="extras/mbedtls/mbedtls/programs/pkey/key_app.c"/>
+            <File Name="extras/mbedtls/mbedtls/programs/pkey/pk_encrypt.c"/>
+            <File Name="extras/mbedtls/mbedtls/programs/pkey/dh_genprime.c"/>
+            <File Name="extras/mbedtls/mbedtls/programs/pkey/rsa_verify.c"/>
+            <File Name="extras/mbedtls/mbedtls/programs/pkey/rsa_sign_pss.c"/>
+            <File Name="extras/mbedtls/mbedtls/programs/pkey/dh_client.c"/>
+            <File Name="extras/mbedtls/mbedtls/programs/pkey/rsa_encrypt.c"/>
+            <File Name="extras/mbedtls/mbedtls/programs/pkey/ecdsa.c"/>
+            <File Name="extras/mbedtls/mbedtls/programs/pkey/pk_verify.c"/>
+            <File Name="extras/mbedtls/mbedtls/programs/pkey/rsa_decrypt.c"/>
+            <File Name="extras/mbedtls/mbedtls/programs/pkey/key_app_writer.c"/>
+            <File Name="extras/mbedtls/mbedtls/programs/pkey/dh_server.c"/>
+            <File Name="extras/mbedtls/mbedtls/programs/pkey/pk_sign.c"/>
+            <File Name="extras/mbedtls/mbedtls/programs/pkey/pk_decrypt.c"/>
+          </VirtualDirectory>
+          <VirtualDirectory Name="x509">
+            <File Name="extras/mbedtls/mbedtls/programs/x509/req_app.c"/>
+            <File Name="extras/mbedtls/mbedtls/programs/x509/cert_app.c"/>
+            <File Name="extras/mbedtls/mbedtls/programs/x509/cert_write.c"/>
+            <File Name="extras/mbedtls/mbedtls/programs/x509/cert_req.c"/>
+            <File Name="extras/mbedtls/mbedtls/programs/x509/crl_app.c"/>
+          </VirtualDirectory>
+          <VirtualDirectory Name="hash">
+            <File Name="extras/mbedtls/mbedtls/programs/hash/hello.c"/>
+            <File Name="extras/mbedtls/mbedtls/programs/hash/generic_sum.c"/>
+          </VirtualDirectory>
+          <VirtualDirectory Name="util">
+            <File Name="extras/mbedtls/mbedtls/programs/util/pem2der.c"/>
+            <File Name="extras/mbedtls/mbedtls/programs/util/strerror.c"/>
+          </VirtualDirectory>
+          <VirtualDirectory Name="aes">
+            <File Name="extras/mbedtls/mbedtls/programs/aes/crypt_and_hash.c"/>
+            <File Name="extras/mbedtls/mbedtls/programs/aes/aescrypt2.c"/>
+          </VirtualDirectory>
+          <File Name="extras/mbedtls/mbedtls/programs/wince_main.c"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="include">
+          <VirtualDirectory Name="mbedtls">
+            <File Name="extras/mbedtls/mbedtls/include/mbedtls/certs.h"/>
+            <File Name="extras/mbedtls/mbedtls/include/mbedtls/hmac_drbg.h"/>
+            <File Name="extras/mbedtls/mbedtls/include/mbedtls/version.h"/>
+            <File Name="extras/mbedtls/mbedtls/include/mbedtls/cipher_internal.h"/>
+            <File Name="extras/mbedtls/mbedtls/include/mbedtls/asn1write.h"/>
+            <File Name="extras/mbedtls/mbedtls/include/mbedtls/base64.h"/>
+            <File Name="extras/mbedtls/mbedtls/include/mbedtls/dhm.h"/>
+            <File Name="extras/mbedtls/mbedtls/include/mbedtls/des.h"/>
+            <File Name="extras/mbedtls/mbedtls/include/mbedtls/timing.h"/>
+            <File Name="extras/mbedtls/mbedtls/include/mbedtls/cipher.h"/>
+            <File Name="extras/mbedtls/mbedtls/include/mbedtls/oid.h"/>
+            <File Name="extras/mbedtls/mbedtls/include/mbedtls/md_internal.h"/>
+            <File Name="extras/mbedtls/mbedtls/include/mbedtls/sha512.h"/>
+            <File Name="extras/mbedtls/mbedtls/include/mbedtls/ecdh.h"/>
+            <File Name="extras/mbedtls/mbedtls/include/mbedtls/rsa.h"/>
+            <File Name="extras/mbedtls/mbedtls/include/mbedtls/x509_csr.h"/>
+            <File Name="extras/mbedtls/mbedtls/include/mbedtls/pkcs5.h"/>
+            <File Name="extras/mbedtls/mbedtls/include/mbedtls/net.h"/>
+            <File Name="extras/mbedtls/mbedtls/include/mbedtls/xtea.h"/>
+            <File Name="extras/mbedtls/mbedtls/include/mbedtls/blowfish.h"/>
+            <File Name="extras/mbedtls/mbedtls/include/mbedtls/md4.h"/>
+            <File Name="extras/mbedtls/mbedtls/include/mbedtls/debug.h"/>
+            <File Name="extras/mbedtls/mbedtls/include/mbedtls/gcm.h"/>
+            <File Name="extras/mbedtls/mbedtls/include/mbedtls/ecp.h"/>
+            <File Name="extras/mbedtls/mbedtls/include/mbedtls/ecdsa.h"/>
+            <File Name="extras/mbedtls/mbedtls/include/mbedtls/bn_mul.h"/>
+            <File Name="extras/mbedtls/mbedtls/include/mbedtls/bignum.h"/>
+            <File Name="extras/mbedtls/mbedtls/include/mbedtls/x509_crl.h"/>
+            <File Name="extras/mbedtls/mbedtls/include/mbedtls/platform.h"/>
+            <File Name="extras/mbedtls/mbedtls/include/mbedtls/pkcs11.h"/>
+            <File Name="extras/mbedtls/mbedtls/include/mbedtls/memory_buffer_alloc.h"/>
+            <File Name="extras/mbedtls/mbedtls/include/mbedtls/check_config.h"/>
+            <File Name="extras/mbedtls/mbedtls/include/mbedtls/error.h"/>
+            <File Name="extras/mbedtls/mbedtls/include/mbedtls/pk_internal.h"/>
+            <File Name="extras/mbedtls/mbedtls/include/mbedtls/ccm.h"/>
+            <File Name="extras/mbedtls/mbedtls/include/mbedtls/x509_crt.h"/>
+            <File Name="extras/mbedtls/mbedtls/include/mbedtls/compat-1.3.h"/>
+            <File Name="extras/mbedtls/mbedtls/include/mbedtls/aesni.h"/>
+            <File Name="extras/mbedtls/mbedtls/include/mbedtls/config.h"/>
+            <File Name="extras/mbedtls/mbedtls/include/mbedtls/ssl_ticket.h"/>
+            <File Name="extras/mbedtls/mbedtls/include/mbedtls/x509.h"/>
+            <File Name="extras/mbedtls/mbedtls/include/mbedtls/pk.h"/>
+            <File Name="extras/mbedtls/mbedtls/include/mbedtls/havege.h"/>
+            <File Name="extras/mbedtls/mbedtls/include/mbedtls/ssl_cookie.h"/>
+            <File Name="extras/mbedtls/mbedtls/include/mbedtls/ctr_drbg.h"/>
+            <File Name="extras/mbedtls/mbedtls/include/mbedtls/md.h"/>
+            <File Name="extras/mbedtls/mbedtls/include/mbedtls/padlock.h"/>
+            <File Name="extras/mbedtls/mbedtls/include/mbedtls/arc4.h"/>
+            <File Name="extras/mbedtls/mbedtls/include/mbedtls/threading.h"/>
+            <File Name="extras/mbedtls/mbedtls/include/mbedtls/md5.h"/>
+            <File Name="extras/mbedtls/mbedtls/include/mbedtls/md2.h"/>
+            <File Name="extras/mbedtls/mbedtls/include/mbedtls/ssl_internal.h"/>
+            <File Name="extras/mbedtls/mbedtls/include/mbedtls/ssl.h"/>
+            <File Name="extras/mbedtls/mbedtls/include/mbedtls/asn1.h"/>
+            <File Name="extras/mbedtls/mbedtls/include/mbedtls/sha256.h"/>
+            <File Name="extras/mbedtls/mbedtls/include/mbedtls/aes.h"/>
+            <File Name="extras/mbedtls/mbedtls/include/mbedtls/pem.h"/>
+            <File Name="extras/mbedtls/mbedtls/include/mbedtls/camellia.h"/>
+            <File Name="extras/mbedtls/mbedtls/include/mbedtls/pkcs12.h"/>
+            <File Name="extras/mbedtls/mbedtls/include/mbedtls/ssl_cache.h"/>
+            <File Name="extras/mbedtls/mbedtls/include/mbedtls/entropy.h"/>
+            <File Name="extras/mbedtls/mbedtls/include/mbedtls/ssl_ciphersuites.h"/>
+            <File Name="extras/mbedtls/mbedtls/include/mbedtls/ripemd160.h"/>
+            <File Name="extras/mbedtls/mbedtls/include/mbedtls/entropy_poll.h"/>
+            <File Name="extras/mbedtls/mbedtls/include/mbedtls/sha1.h"/>
+          </VirtualDirectory>
+        </VirtualDirectory>
+        <VirtualDirectory Name="library">
+          <File Name="extras/mbedtls/mbedtls/library/debug.c"/>
+          <File Name="extras/mbedtls/mbedtls/library/sha1.c"/>
+          <File Name="extras/mbedtls/mbedtls/library/error.c"/>
+          <File Name="extras/mbedtls/mbedtls/library/asn1parse.c"/>
+          <File Name="extras/mbedtls/mbedtls/library/x509_csr.c"/>
+          <File Name="extras/mbedtls/mbedtls/library/sha512.c"/>
+          <File Name="extras/mbedtls/mbedtls/library/cipher.c"/>
+          <File Name="extras/mbedtls/mbedtls/library/pem.c"/>
+          <File Name="extras/mbedtls/mbedtls/library/ssl_tls.c"/>
+          <File Name="extras/mbedtls/mbedtls/library/blowfish.c"/>
+          <File Name="extras/mbedtls/mbedtls/library/ripemd160.c"/>
+          <File Name="extras/mbedtls/mbedtls/library/ecp_curves.c"/>
+          <File Name="extras/mbedtls/mbedtls/library/rsa.c"/>
+          <File Name="extras/mbedtls/mbedtls/library/des.c"/>
+          <File Name="extras/mbedtls/mbedtls/library/x509write_csr.c"/>
+          <File Name="extras/mbedtls/mbedtls/library/version_features.c"/>
+          <File Name="extras/mbedtls/mbedtls/library/ssl_cookie.c"/>
+          <File Name="extras/mbedtls/mbedtls/library/padlock.c"/>
+          <File Name="extras/mbedtls/mbedtls/library/ecp.c"/>
+          <File Name="extras/mbedtls/mbedtls/library/ecdh.c"/>
+          <File Name="extras/mbedtls/mbedtls/library/asn1write.c"/>
+          <File Name="extras/mbedtls/mbedtls/library/ssl_ciphersuites.c"/>
+          <File Name="extras/mbedtls/mbedtls/library/ssl_cli.c"/>
+          <File Name="extras/mbedtls/mbedtls/library/entropy.c"/>
+          <File Name="extras/mbedtls/mbedtls/library/camellia.c"/>
+          <File Name="extras/mbedtls/mbedtls/library/net.c"/>
+          <File Name="extras/mbedtls/mbedtls/library/oid.c"/>
+          <File Name="extras/mbedtls/mbedtls/library/md.c"/>
+          <File Name="extras/mbedtls/mbedtls/library/base64.c"/>
+          <File Name="extras/mbedtls/mbedtls/library/certs.c"/>
+          <File Name="extras/mbedtls/mbedtls/library/hmac_drbg.c"/>
+          <File Name="extras/mbedtls/mbedtls/library/pkwrite.c"/>
+          <File Name="extras/mbedtls/mbedtls/library/xtea.c"/>
+          <File Name="extras/mbedtls/mbedtls/library/havege.c"/>
+          <File Name="extras/mbedtls/mbedtls/library/ssl_cache.c"/>
+          <File Name="extras/mbedtls/mbedtls/library/aesni.c"/>
+          <File Name="extras/mbedtls/mbedtls/library/version.c"/>
+          <File Name="extras/mbedtls/mbedtls/library/dhm.c"/>
+          <File Name="extras/mbedtls/mbedtls/library/md4.c"/>
+          <File Name="extras/mbedtls/mbedtls/library/sha256.c"/>
+          <File Name="extras/mbedtls/mbedtls/library/ctr_drbg.c"/>
+          <File Name="extras/mbedtls/mbedtls/library/x509_create.c"/>
+          <File Name="extras/mbedtls/mbedtls/library/ecdsa.c"/>
+          <File Name="extras/mbedtls/mbedtls/library/platform.c"/>
+          <File Name="extras/mbedtls/mbedtls/library/md_wrap.c"/>
+          <File Name="extras/mbedtls/mbedtls/library/pkcs11.c"/>
+          <File Name="extras/mbedtls/mbedtls/library/bignum.c"/>
+          <File Name="extras/mbedtls/mbedtls/library/ssl_ticket.c"/>
+          <File Name="extras/mbedtls/mbedtls/library/pk.c"/>
+          <File Name="extras/mbedtls/mbedtls/library/x509write_crt.c"/>
+          <File Name="extras/mbedtls/mbedtls/library/pkcs12.c"/>
+          <File Name="extras/mbedtls/mbedtls/library/gcm.c"/>
+          <File Name="extras/mbedtls/mbedtls/library/threading.c"/>
+          <File Name="extras/mbedtls/mbedtls/library/entropy_poll.c"/>
+          <File Name="extras/mbedtls/mbedtls/library/pkcs5.c"/>
+          <File Name="extras/mbedtls/mbedtls/library/x509_crt.c"/>
+          <File Name="extras/mbedtls/mbedtls/library/ccm.c"/>
+          <File Name="extras/mbedtls/mbedtls/library/md5.c"/>
+          <File Name="extras/mbedtls/mbedtls/library/md2.c"/>
+          <File Name="extras/mbedtls/mbedtls/library/arc4.c"/>
+          <File Name="extras/mbedtls/mbedtls/library/timing.c"/>
+          <File Name="extras/mbedtls/mbedtls/library/ssl_srv.c"/>
+          <File Name="extras/mbedtls/mbedtls/library/pkparse.c"/>
+          <File Name="extras/mbedtls/mbedtls/library/x509_crl.c"/>
+          <File Name="extras/mbedtls/mbedtls/library/aes.c"/>
+          <File Name="extras/mbedtls/mbedtls/library/x509.c"/>
+          <File Name="extras/mbedtls/mbedtls/library/pk_wrap.c"/>
+          <File Name="extras/mbedtls/mbedtls/library/memory_buffer_alloc.c"/>
+          <File Name="extras/mbedtls/mbedtls/library/cipher_wrap.c"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="configs">
+          <File Name="extras/mbedtls/mbedtls/configs/config-suite-b.h"/>
+          <File Name="extras/mbedtls/mbedtls/configs/config-picocoin.h"/>
+          <File Name="extras/mbedtls/mbedtls/configs/config-mini-tls1_1.h"/>
+          <File Name="extras/mbedtls/mbedtls/configs/config-ccm-psk-tls1_2.h"/>
+        </VirtualDirectory>
+      </VirtualDirectory>
+      <VirtualDirectory Name="include">
+        <VirtualDirectory Name="mbedtls">
+          <File Name="extras/mbedtls/include/mbedtls/config.h"/>
+        </VirtualDirectory>
+      </VirtualDirectory>
+      <File Name="extras/mbedtls/hardware_entropy.c"/>
+      <File Name="extras/mbedtls/net_lwip.c"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="jsmn">
+      <VirtualDirectory Name="jsmn">
+        <VirtualDirectory Name="test">
+          <File Name="extras/jsmn/jsmn/test/testutil.h"/>
+          <File Name="extras/jsmn/jsmn/test/tests.c"/>
+          <File Name="extras/jsmn/jsmn/test/test.h"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="example">
+          <File Name="extras/jsmn/jsmn/example/simple.c"/>
+          <File Name="extras/jsmn/jsmn/example/jsondump.c"/>
+        </VirtualDirectory>
+        <File Name="extras/jsmn/jsmn/jsmn.c"/>
+        <File Name="extras/jsmn/jsmn/jsmn.h"/>
+      </VirtualDirectory>
+    </VirtualDirectory>
+    <VirtualDirectory Name="dhcpserver">
+      <VirtualDirectory Name="include">
+        <File Name="extras/dhcpserver/include/dhcpserver.h"/>
+      </VirtualDirectory>
+      <File Name="extras/dhcpserver/dhcpserver.c"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="cpp_support">
+      <VirtualDirectory Name="include">
+        <File Name="extras/cpp_support/include/queue.hpp"/>
+        <File Name="extras/cpp_support/include/mutex.hpp"/>
+        <File Name="extras/cpp_support/include/task.hpp"/>
+        <File Name="extras/cpp_support/include/countdown.hpp"/>
+      </VirtualDirectory>
+    </VirtualDirectory>
+    <VirtualDirectory Name="spiffs">
+      <VirtualDirectory Name="spiffs">
+        <VirtualDirectory Name="src">
+          <VirtualDirectory Name="test">
+            <File Name="extras/spiffs/spiffs/src/test/test_spiffs.h"/>
+            <File Name="extras/spiffs/spiffs/src/test/test_bugreports.c"/>
+            <File Name="extras/spiffs/spiffs/src/test/testsuites.c"/>
+            <File Name="extras/spiffs/spiffs/src/test/test_dev.c"/>
+            <File Name="extras/spiffs/spiffs/src/test/test_spiffs.c"/>
+            <File Name="extras/spiffs/spiffs/src/test/params_test.h"/>
+            <File Name="extras/spiffs/spiffs/src/test/main.c"/>
+            <File Name="extras/spiffs/spiffs/src/test/test_check.c"/>
+            <File Name="extras/spiffs/spiffs/src/test/test_hydrogen.c"/>
+            <File Name="extras/spiffs/spiffs/src/test/testrunner.h"/>
+            <File Name="extras/spiffs/spiffs/src/test/testrunner.c"/>
+          </VirtualDirectory>
+          <VirtualDirectory Name="default">
+            <File Name="extras/spiffs/spiffs/src/default/spiffs_config.h"/>
+          </VirtualDirectory>
+          <File Name="extras/spiffs/spiffs/src/spiffs_gc.c"/>
+          <File Name="extras/spiffs/spiffs/src/spiffs_hydrogen.c"/>
+          <File Name="extras/spiffs/spiffs/src/spiffs_nucleus.h"/>
+          <File Name="extras/spiffs/spiffs/src/spiffs_check.c"/>
+          <File Name="extras/spiffs/spiffs/src/spiffs.h"/>
+          <File Name="extras/spiffs/spiffs/src/spiffs_nucleus.c"/>
+          <File Name="extras/spiffs/spiffs/src/spiffs_cache.c"/>
+        </VirtualDirectory>
+      </VirtualDirectory>
+      <VirtualDirectory Name="mkspiffs">
+        <File Name="extras/spiffs/mkspiffs/mkspiffs.c"/>
+      </VirtualDirectory>
+      <File Name="extras/spiffs/esp_spiffs_flash.c"/>
+      <File Name="extras/spiffs/esp_spiffs.c"/>
+      <File Name="extras/spiffs/esp_spiffs.h"/>
+      <File Name="extras/spiffs/esp_spiffs_flash.h"/>
+      <File Name="extras/spiffs/spiffs_config.h"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="paho_mqtt_c">
+      <File Name="extras/paho_mqtt_c/MQTTPublish.h"/>
+      <File Name="extras/paho_mqtt_c/MQTTClient.c"/>
+      <File Name="extras/paho_mqtt_c/MQTTSubscribeClient.c"/>
+      <File Name="extras/paho_mqtt_c/MQTTDeserializePublish.c"/>
+      <File Name="extras/paho_mqtt_c/MQTTUnsubscribe.h"/>
+      <File Name="extras/paho_mqtt_c/MQTTUnsubscribeClient.c"/>
+      <File Name="extras/paho_mqtt_c/MQTTSerializePublish.c"/>
+      <File Name="extras/paho_mqtt_c/MQTTPacket.c"/>
+      <File Name="extras/paho_mqtt_c/MQTTESP8266.h"/>
+      <File Name="extras/paho_mqtt_c/MQTTFormat.h"/>
+      <File Name="extras/paho_mqtt_c/MQTTSubscribe.h"/>
+      <File Name="extras/paho_mqtt_c/MQTTPacket.h"/>
+      <File Name="extras/paho_mqtt_c/StackTrace.h"/>
+      <File Name="extras/paho_mqtt_c/MQTTESP8266.c"/>
+      <File Name="extras/paho_mqtt_c/MQTTConnect.h"/>
+      <File Name="extras/paho_mqtt_c/MQTTClient.h"/>
+      <File Name="extras/paho_mqtt_c/MQTTConnectClient.c"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="fatfs">
+      <File Name="extras/fatfs/cc950.h"/>
+      <File Name="extras/fatfs/ff.h"/>
+      <File Name="extras/fatfs/ff.c"/>
+      <File Name="extras/fatfs/volumes.c"/>
+      <File Name="extras/fatfs/cc949.h"/>
+      <File Name="extras/fatfs/volumes.h"/>
+      <File Name="extras/fatfs/syscall.c"/>
+      <File Name="extras/fatfs/cc932.h"/>
+      <File Name="extras/fatfs/integer.h"/>
+      <File Name="extras/fatfs/ccsbcs.h"/>
+      <File Name="extras/fatfs/diskio.c"/>
+      <File Name="extras/fatfs/ffconf.h"/>
+      <File Name="extras/fatfs/cc936.h"/>
+      <File Name="extras/fatfs/unicode.c"/>
+      <File Name="extras/fatfs/diskio.h"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="ultrasonic">
+      <File Name="extras/ultrasonic/ultrasonic.c"/>
+      <File Name="extras/ultrasonic/ultrasonic.h"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="i2s_dma">
+      <File Name="extras/i2s_dma/i2s_dma.h"/>
+      <File Name="extras/i2s_dma/i2s_dma.c"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="onewire">
+      <File Name="extras/onewire/onewire.c"/>
+      <File Name="extras/onewire/onewire.h"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="pcf8574">
+      <File Name="extras/pcf8574/pcf8574.c"/>
+      <File Name="extras/pcf8574/pcf8574.h"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="ds1307">
+      <File Name="extras/ds1307/ds1307.c"/>
+      <File Name="extras/ds1307/ds1307.h"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="sdio">
+      <File Name="extras/sdio/sdio_impl.h"/>
+      <File Name="extras/sdio/sdio.c"/>
+      <File Name="extras/sdio/sdio.h"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="hd44780">
+      <File Name="extras/hd44780/hd44780.c"/>
+      <File Name="extras/hd44780/hd44780.h"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="ds18b20">
+      <File Name="extras/ds18b20/ds18b20.c"/>
+      <File Name="extras/ds18b20/ds18b20.h"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="ws2812">
+      <File Name="extras/ws2812/ws2812.c"/>
+      <File Name="extras/ws2812/ws2812.h"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="dht">
+      <File Name="extras/dht/dht.h"/>
+      <File Name="extras/dht/dht.c"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="sntp">
+      <File Name="extras/sntp/sntp.c"/>
+      <File Name="extras/sntp/sntp_fun.c"/>
+      <File Name="extras/sntp/sntp.h"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="tsl2561">
+      <File Name="extras/tsl2561/tsl2561.c"/>
+      <File Name="extras/tsl2561/tsl2561.h"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="ws2812_i2s">
+      <File Name="extras/ws2812_i2s/ws2812_i2s.h"/>
+      <File Name="extras/ws2812_i2s/ws2812_i2s.c"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="ds3231">
+      <File Name="extras/ds3231/ds3231.h"/>
+      <File Name="extras/ds3231/ds3231.c"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="stdin_uart_interrupt">
+      <File Name="extras/stdin_uart_interrupt/stdin_uart_interrupt.h"/>
+      <File Name="extras/stdin_uart_interrupt/stdin_uart_interrupt.c"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="rboot-ota">
+      <File Name="extras/rboot-ota/rboot-api.c"/>
+      <File Name="extras/rboot-ota/rboot-integration.h"/>
+      <File Name="extras/rboot-ota/ota-tftp.h"/>
+      <File Name="extras/rboot-ota/ota-tftp.c"/>
+      <File Name="extras/rboot-ota/rboot-api.h"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="hmc5883l">
+      <File Name="extras/hmc5883l/hmc5883l.h"/>
+      <File Name="extras/hmc5883l/hmc5883l.c"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="bmp180">
+      <File Name="extras/bmp180/bmp180.c"/>
+      <File Name="extras/bmp180/bmp180.h"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="i2c">
+      <File Name="extras/i2c/i2c.c"/>
+      <File Name="extras/i2c/i2c.h"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="bmp280">
+      <File Name="extras/bmp280/bmp280.c"/>
+      <File Name="extras/bmp280/bmp280.h"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="ds1302">
+      <File Name="extras/ds1302/ds1302.c"/>
+      <File Name="extras/ds1302/ds1302.h"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="ssd1306">
+      <File Name="extras/ssd1306/ssd1306.h"/>
+      <File Name="extras/ssd1306/ssd1306.c"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="pwm">
+      <File Name="extras/pwm/pwm.h"/>
+      <File Name="extras/pwm/pwm.c"/>
+    </VirtualDirectory>
+  </VirtualDirectory>
+  <VirtualDirectory Name="examples">
+    <VirtualDirectory Name="http_get_mbedtls">
+      <VirtualDirectory Name="include">
+        <VirtualDirectory Name="mbedtls">
+          <File Name="examples/http_get_mbedtls/include/mbedtls/config.h"/>
+        </VirtualDirectory>
+      </VirtualDirectory>
+      <File Name="examples/http_get_mbedtls/cert.c"/>
+      <File Name="examples/http_get_mbedtls/http_get_mbedtls.c"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="experiments">
+      <VirtualDirectory Name="timers">
+        <File Name="examples/experiments/timers/timers.c"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="unaligned_load">
+        <File Name="examples/experiments/unaligned_load/unaligned_load.c"/>
+      </VirtualDirectory>
+    </VirtualDirectory>
+    <VirtualDirectory Name="tests">
+      <VirtualDirectory Name="hmac_test_vectors">
+        <File Name="examples/tests/hmac_test_vectors/hmac_test_vectors.c"/>
+      </VirtualDirectory>
+    </VirtualDirectory>
+    <VirtualDirectory Name="aws_iot">
+      <VirtualDirectory Name="mbedtls">
+        <File Name="examples/aws_iot/mbedtls/config.h"/>
+      </VirtualDirectory>
+      <File Name="examples/aws_iot/ssl_connection.c"/>
+      <File Name="examples/aws_iot/ssl_connection.h"/>
+      <File Name="examples/aws_iot/ca_cert.c"/>
+      <File Name="examples/aws_iot/client_config.c"/>
+      <File Name="examples/aws_iot/aws_iot.c"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="ws2812_rainbow">
+      <File Name="examples/ws2812_rainbow/ws2812_rainbow.c"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="serial_echo">
+      <File Name="examples/serial_echo/serial_echo.c"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="ds3231_test">
+      <File Name="examples/ds3231_test/ds3231_test.c"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="ssd1306_i2c">
+      <File Name="examples/ssd1306_i2c/ssd1306_i2c.c"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="i2s_audio">
+      <File Name="examples/i2s_audio/i2s_audio_example.c"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="fatfs">
+      <File Name="examples/fatfs/main.c"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="ultrasonic">
+      <File Name="examples/ultrasonic/main.c"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="ota_basic">
+      <File Name="examples/ota_basic/test.c"/>
+      <File Name="examples/ota_basic/ota_basic.c"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="simple_cplusplus">
+      <File Name="examples/simple_cplusplus/simple.cpp"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="spiffs">
+      <File Name="examples/spiffs/spiffs_example.c"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="bmp180_i2c">
+      <File Name="examples/bmp180_i2c/bmp180_i2c.c"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="simple">
+      <File Name="examples/simple/simple.c"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="blink">
+      <File Name="examples/blink/FreeRTOSConfig.h"/>
+      <File Name="examples/blink/blink.c"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="ds1307">
+      <File Name="examples/ds1307/main.c"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="http_get">
+      <File Name="examples/http_get/http_get.c"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="sdio_raw">
+      <File Name="examples/sdio_raw/main.c"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="terminal">
+      <File Name="examples/terminal/FreeRTOSConfig.h"/>
+      <File Name="examples/terminal/terminal.c"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="button">
+      <File Name="examples/button/button.c"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="fatfs_rtc">
+      <File Name="examples/fatfs_rtc/main.c"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="sntp">
+      <File Name="examples/sntp/sntp_example.c"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="cpp_01_tasks">
+      <File Name="examples/cpp_01_tasks/cpp_tasks.cpp"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="sysparam_editor">
+      <File Name="examples/sysparam_editor/sysparam_editor.c"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="ds1302_test">
+      <File Name="examples/ds1302_test/main.c"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="tsl2561">
+      <File Name="examples/tsl2561/tsl2561_example.c"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="access_point">
+      <File Name="examples/access_point/access_point.c"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="ws2812_i2s">
+      <File Name="examples/ws2812_i2s/ws2812_i2s_colour_loop.c"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="hd44780_lcd">
+      <File Name="examples/hd44780_lcd/main.c"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="dht_sensor">
+      <File Name="examples/dht_sensor/dht_sensor.c"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="wifi_scan">
+      <File Name="examples/wifi_scan/main.c"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="tls_server">
+      <File Name="examples/tls_server/tls_server.c"/>
+      <File Name="examples/tls_server/cert.c"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="blink_timers">
+      <File Name="examples/blink_timers/blink_timers.c"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="i2c_lcd_test">
+      <File Name="examples/i2c_lcd_test/main.c"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="hmc5883l">
+      <File Name="examples/hmc5883l/main.c"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="pwm_test">
+      <File Name="examples/pwm_test/pwm_test.c"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="bmp280">
+      <File Name="examples/bmp280/bmp280_example.c"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="ds18b20_onewire">
+      <File Name="examples/ds18b20_onewire/ds18b20_onewire.c"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="mqtt_client">
+      <File Name="examples/mqtt_client/mqtt_client.c"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="ds18b20_broadcaster">
+      <File Name="examples/ds18b20_broadcaster/ds18b20_broadcaster.c"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="json_jsmn_simple">
+      <File Name="examples/json_jsmn_simple/json_jsmn_simple.c"/>
+    </VirtualDirectory>
+  </VirtualDirectory>
+  <VirtualDirectory Name="core">
+    <VirtualDirectory Name="include">
+      <VirtualDirectory Name="esp">
+        <File Name="core/include/esp/rtc_regs.h"/>
+        <File Name="core/include/esp/spi.h"/>
+        <File Name="core/include/esp/phy.h"/>
+        <File Name="core/include/esp/wdev_regs.h"/>
+        <File Name="core/include/esp/slc_regs.h"/>
+        <File Name="core/include/esp/sar_regs.h"/>
+        <File Name="core/include/esp/slc.h"/>
+        <File Name="core/include/esp/uart.h"/>
+        <File Name="core/include/esp/phy_regs.h"/>
+        <File Name="core/include/esp/iomux.h"/>
+        <File Name="core/include/esp/gpio.h"/>
+        <File Name="core/include/esp/hwrand.h"/>
+        <File Name="core/include/esp/types.h"/>
+        <File Name="core/include/esp/interrupts.h"/>
+        <File Name="core/include/esp/timer_regs.h"/>
+        <File Name="core/include/esp/i2s_regs.h"/>
+        <File Name="core/include/esp/wdt_regs.h"/>
+        <File Name="core/include/esp/dport_regs.h"/>
+        <File Name="core/include/esp/gpio_regs.h"/>
+        <File Name="core/include/esp/iomux_regs.h"/>
+        <File Name="core/include/esp/spi_regs.h"/>
+        <File Name="core/include/esp/rtcmem_regs.h"/>
+        <File Name="core/include/esp/uart_regs.h"/>
+        <File Name="core/include/esp/clocks.h"/>
+        <File Name="core/include/esp/registers.h"/>
+        <File Name="core/include/esp/rom.h"/>
+        <File Name="core/include/esp/timer.h"/>
+      </VirtualDirectory>
+      <File Name="core/include/common_macros.h"/>
+      <File Name="core/include/xtensa_ops.h"/>
+      <File Name="core/include/debug_dumps.h"/>
+      <File Name="core/include/sysparam.h"/>
+      <File Name="core/include/esp8266.h"/>
+      <File Name="core/include/flashchip.h"/>
+      <File Name="core/include/os_version.h"/>
+      <File Name="core/include/sdk_internal.h"/>
+    </VirtualDirectory>
+    <File Name="core/phy_info.c"/>
+    <File Name="core/esp_iomux.c"/>
+    <File Name="core/sdk_compat.c"/>
+    <File Name="core/sysparam.c"/>
+    <File Name="core/esp_spi.c"/>
+    <File Name="core/esp_hwrand.c"/>
+    <File Name="core/cplusplus_operators.cpp"/>
+    <File Name="core/esp_interrupts.c"/>
+    <File Name="core/esp_timer.c"/>
+    <File Name="core/newlib_syscalls.c"/>
+    <File Name="core/app_main.c"/>
+    <File Name="core/esp_phy.c"/>
+    <File Name="core/debug_dumps.c"/>
+    <File Name="core/esp_gpio_interrupts.c"/>
+    <File Name="core/esp_gpio.c"/>
+    <File Name="core/component.mk"/>
+  </VirtualDirectory>
+  <VirtualDirectory Name="bootloader">
+    <VirtualDirectory Name="rboot">
+      <VirtualDirectory Name="appcode">
+        <File Name="bootloader/rboot/appcode/rboot-bigflash.c"/>
+        <File Name="bootloader/rboot/appcode/rboot-api.c"/>
+        <File Name="bootloader/rboot/appcode/rboot-api.h"/>
+      </VirtualDirectory>
+      <File Name="bootloader/rboot/testload1.c"/>
+      <File Name="bootloader/rboot/rboot-private.h"/>
+      <File Name="bootloader/rboot/testload2.h"/>
+      <File Name="bootloader/rboot/rboot.c"/>
+      <File Name="bootloader/rboot/testload2.c"/>
+      <File Name="bootloader/rboot/testload1.h"/>
+      <File Name="bootloader/rboot/rboot.h"/>
+      <File Name="bootloader/rboot/rboot-stage2a.c"/>
+    </VirtualDirectory>
+    <File Name="bootloader/rboot.h"/>
+  </VirtualDirectory>
+  <VirtualDirectory Name="FreeRTOS">
+    <VirtualDirectory Name="Source">
+      <VirtualDirectory Name="portable">
+        <VirtualDirectory Name="esp8266">
+          <File Name="FreeRTOS/Source/portable/esp8266/xtruntime.h"/>
+          <File Name="FreeRTOS/Source/portable/esp8266/portmacro.h"/>
+          <File Name="FreeRTOS/Source/portable/esp8266/port.c"/>
+          <File Name="FreeRTOS/Source/portable/esp8266/xtensa_context.h"/>
+          <File Name="FreeRTOS/Source/portable/esp8266/xtensa_timer.h"/>
+          <File Name="FreeRTOS/Source/portable/esp8266/xtensa_rtos.h"/>
+        </VirtualDirectory>
+      </VirtualDirectory>
+      <VirtualDirectory Name="include">
+        <File Name="FreeRTOS/Source/include/FreeRTOSConfig.h"/>
+        <File Name="FreeRTOS/Source/include/StackMacros.h"/>
+        <File Name="FreeRTOS/Source/include/deprecated_definitions.h"/>
+        <File Name="FreeRTOS/Source/include/croutine.h"/>
+        <File Name="FreeRTOS/Source/include/mpu_wrappers.h"/>
+        <File Name="FreeRTOS/Source/include/semphr.h"/>
+        <File Name="FreeRTOS/Source/include/queue.h"/>
+        <File Name="FreeRTOS/Source/include/list.h"/>
+        <File Name="FreeRTOS/Source/include/timers.h"/>
+        <File Name="FreeRTOS/Source/include/task.h"/>
+        <File Name="FreeRTOS/Source/include/projdefs.h"/>
+        <File Name="FreeRTOS/Source/include/portable.h"/>
+        <File Name="FreeRTOS/Source/include/FreeRTOS.h"/>
+        <File Name="FreeRTOS/Source/include/mpu_prototypes.h"/>
+        <File Name="FreeRTOS/Source/include/event_groups.h"/>
+      </VirtualDirectory>
+      <File Name="FreeRTOS/Source/event_groups.c"/>
+      <File Name="FreeRTOS/Source/timers.c"/>
+      <File Name="FreeRTOS/Source/queue.c"/>
+      <File Name="FreeRTOS/Source/tasks.c"/>
+      <File Name="FreeRTOS/Source/croutine.c"/>
+      <File Name="FreeRTOS/Source/list.c"/>
+    </VirtualDirectory>
+  </VirtualDirectory>
+  <Description/>
+  <Dependencies/>
+  <VirtualDirectory Name="fsm">
+    <File Name="fsm/fsm_parser.c"/>
+    <File Name="fsm/component.mk"/>
+    <VirtualDirectory Name="include">
+      <File Name="fsm/include/fsm_esp8266.h"/>
+      <File Name="fsm/include/fcmprotocol.h"/>
+    </VirtualDirectory>
+  </VirtualDirectory>
+  <VirtualDirectory Name="make">
+    <File Name="common.mk"/>
+    <File Name="parameters.mk"/>
+  </VirtualDirectory>
+  <Settings Type="Dynamic Library">
+    <GlobalSettings>
+      <Compiler Options="" C_Options="" Assembler="">
+        <IncludePath Value="."/>
+      </Compiler>
+      <Linker Options="">
+        <LibraryPath Value="."/>
+      </Linker>
+      <ResourceCompiler Options=""/>
+    </GlobalSettings>
+    <Configuration Name="Debug" CompilerType="GCC" DebuggerType="GNU gdb debugger" Type="Dynamic Library" BuildCmpWithGlobalSettings="append" BuildLnkWithGlobalSettings="append" BuildResWithGlobalSettings="append">
+      <Compiler Options="-g" C_Options="-g" Assembler="" Required="yes" PreCompiledHeader="" PCHInCommandLine="no" PCHFlags="" PCHFlagsPolicy="0">
+        <IncludePath Value="."/>
+      </Compiler>
+      <Linker Options="" Required="yes"/>
+      <ResourceCompiler Options="" Required="no"/>
+      <General OutputFile="" IntermediateDirectory="./Debug" Command="" CommandArguments="" UseSeparateDebugArgs="no" DebugArguments="" WorkingDirectory="$(IntermediateDirectory)" PauseExecWhenProcTerminates="yes" IsGUIProgram="no" IsEnabled="yes"/>
+      <BuildSystem Name="Default"/>
+      <Environment EnvVarSetName="&lt;Use Defaults&gt;" DbgSetName="&lt;Use Defaults&gt;">
+        <![CDATA[]]>
+      </Environment>
+      <Debugger IsRemote="no" RemoteHostName="" RemoteHostPort="" DebuggerPath="" IsExtended="no">
+        <DebuggerSearchPaths/>
+        <PostConnectCommands/>
+        <StartupCommands/>
+      </Debugger>
+      <PreBuild/>
+      <PostBuild/>
+      <CustomBuild Enabled="yes">
+        <RebuildCommand/>
+        <CleanCommand>make clean</CleanCommand>
+        <BuildCommand>make</BuildCommand>
+        <PreprocessFileCommand/>
+        <SingleFileCommand/>
+        <MakefileGenerationCommand/>
+        <ThirdPartyToolName>None</ThirdPartyToolName>
+        <WorkingDirectory>$(WorkspacePath)</WorkingDirectory>
+      </CustomBuild>
+      <AdditionalRules>
+        <CustomPostBuild/>
+        <CustomPreBuild/>
+      </AdditionalRules>
+      <Completion EnableCpp11="no" EnableCpp14="no">
+        <ClangCmpFlagsC/>
+        <ClangCmpFlags/>
+        <ClangPP/>
+        <SearchPaths/>
+      </Completion>
+    </Configuration>
+    <Configuration Name="Release" CompilerType="GCC" DebuggerType="GNU gdb debugger" Type="Dynamic Library" BuildCmpWithGlobalSettings="append" BuildLnkWithGlobalSettings="append" BuildResWithGlobalSettings="append">
+      <Compiler Options="" C_Options="" Assembler="" Required="yes" PreCompiledHeader="" PCHInCommandLine="no" PCHFlags="" PCHFlagsPolicy="0">
+        <IncludePath Value="."/>
+      </Compiler>
+      <Linker Options="-O2" Required="yes"/>
+      <ResourceCompiler Options="" Required="no"/>
+      <General OutputFile="" IntermediateDirectory="./Release" Command="" CommandArguments="" UseSeparateDebugArgs="no" DebugArguments="" WorkingDirectory="$(IntermediateDirectory)" PauseExecWhenProcTerminates="yes" IsGUIProgram="no" IsEnabled="yes"/>
+      <BuildSystem Name="Default"/>
+      <Environment EnvVarSetName="&lt;Use Defaults&gt;" DbgSetName="&lt;Use Defaults&gt;">
+        <![CDATA[]]>
+      </Environment>
+      <Debugger IsRemote="no" RemoteHostName="" RemoteHostPort="" DebuggerPath="" IsExtended="no">
+        <DebuggerSearchPaths/>
+        <PostConnectCommands/>
+        <StartupCommands/>
+      </Debugger>
+      <PreBuild/>
+      <PostBuild/>
+      <CustomBuild Enabled="yes">
+        <RebuildCommand/>
+        <CleanCommand>make clean</CleanCommand>
+        <BuildCommand>make</BuildCommand>
+        <PreprocessFileCommand/>
+        <SingleFileCommand/>
+        <MakefileGenerationCommand/>
+        <ThirdPartyToolName>None</ThirdPartyToolName>
+        <WorkingDirectory>$(WorkspacePath)</WorkingDirectory>
+      </CustomBuild>
+      <AdditionalRules>
+        <CustomPostBuild/>
+        <CustomPreBuild/>
+      </AdditionalRules>
+      <Completion EnableCpp11="no" EnableCpp14="no">
+        <ClangCmpFlagsC/>
+        <ClangCmpFlags/>
+        <ClangPP/>
+        <SearchPaths/>
+      </Completion>
+    </Configuration>
+    <Configuration Name="wifi_scan" CompilerType="GCC" DebuggerType="GNU gdb debugger" Type="Dynamic Library" BuildCmpWithGlobalSettings="append" BuildLnkWithGlobalSettings="append" BuildResWithGlobalSettings="append">
+      <Compiler Options="" C_Options="" Assembler="" Required="no" PreCompiledHeader="" PCHInCommandLine="no" PCHFlags="" PCHFlagsPolicy="0">
+        <IncludePath Value="."/>
+      </Compiler>
+      <Linker Options="-O2" Required="yes"/>
+      <ResourceCompiler Options="" Required="no"/>
+      <General OutputFile="" IntermediateDirectory="./Release" Command="/home/gusenkovs/esp/esp-open-rtos/examples/access_point/runs.sh" CommandArguments="" UseSeparateDebugArgs="no" DebugArguments="" WorkingDirectory="/home/gusenkovs/esp/esp-open-rtos/examples/access_point" PauseExecWhenProcTerminates="yes" IsGUIProgram="no" IsEnabled="yes"/>
+      <BuildSystem Name="Default"/>
+      <Environment EnvVarSetName="&lt;Use Defaults&gt;" DbgSetName="&lt;Use Defaults&gt;">
+        <![CDATA[]]>
+      </Environment>
+      <Debugger IsRemote="no" RemoteHostName="" RemoteHostPort="" DebuggerPath="" IsExtended="no">
+        <DebuggerSearchPaths/>
+        <PostConnectCommands/>
+        <StartupCommands/>
+      </Debugger>
+      <PreBuild>
+        <Command Enabled="yes">export PATH=$PATH:/home/gusenkovs/esp/esp-open-sdk/xtensa-lx106-elf/bin</Command>
+      </PreBuild>
+      <PostBuild/>
+      <CustomBuild Enabled="yes">
+        <RebuildCommand/>
+        <CleanCommand>make clean</CleanCommand>
+        <BuildCommand>make</BuildCommand>
+        <PreprocessFileCommand/>
+        <SingleFileCommand/>
+        <MakefileGenerationCommand/>
+        <ThirdPartyToolName>None</ThirdPartyToolName>
+        <WorkingDirectory>/home/gusenkovs/esp/esp-open-rtos/examples/access_point</WorkingDirectory>
+      </CustomBuild>
+      <AdditionalRules>
+        <CustomPostBuild/>
+        <CustomPreBuild/>
+      </AdditionalRules>
+      <Completion EnableCpp11="no" EnableCpp14="no">
+        <ClangCmpFlagsC/>
+        <ClangCmpFlags/>
+        <ClangPP/>
+        <SearchPaths/>
+      </Completion>
+    </Configuration>
+  </Settings>
+  <Dependencies Name="Debug"/>
+  <Dependencies Name="Release"/>
+  <Dependencies Name="wifi_scan"/>
+</CodeLite_Project>
